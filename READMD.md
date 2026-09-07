@@ -1,1 +1,1 @@
-https://learn.microsoft.com/zh-tw/dotnet/csharp/fundamentals/types/
+https://learn.microsoft.com/zh-tw/dotnet/csharp/fundamentals/types/generics
