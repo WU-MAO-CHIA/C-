@@ -1,1 +1,1 @@
-https://learn.microsoft.com/zh-tw/dotnet/csharp/fundamentals/types/generics
+https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/types/conversions
