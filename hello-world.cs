@@ -4,24 +4,24 @@ namespace MySpace
 {
     class MyClass
     {
-        
+
     }
 
     struct MyStruct
     {
-        
+
     }
 
     interface MyInterface
     {
-        
+
     }
 
     delegate int MyDelegate();
 
     enum MyEnum
     {
-        
+
     }
 
     class Program

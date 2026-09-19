@@ -35,7 +35,7 @@ if (Enum.TryParse<Season>("Monsoon", out var unknown))
 }
 else
 {
-    Console.WriteLine("'Monsoon' is not a valid Season"); 
+    Console.WriteLine("'Monsoon' is not a valid Season");
 }
 
 // Iterate over all values in an enum:

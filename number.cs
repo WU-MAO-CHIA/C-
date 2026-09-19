@@ -20,7 +20,7 @@ namespace MySpace
 
             // division
             c = a / b;
-            Console.WriteLine(c);        
+            Console.WriteLine(c);
         }
 
         static void OrderPrecedence()
@@ -41,7 +41,7 @@ namespace MySpace
             int f = 4;
             int g = 3;
             int h = (e + f) / g;
-            Console.WriteLine(h);        
+            Console.WriteLine(h);
         }
 
 

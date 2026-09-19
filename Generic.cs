@@ -11,7 +11,7 @@ Always use these collections instead of nongeneric collections like ArrayList:
 using System.Reflection.Metadata;
 
 List<int> scores = [95, 87, 72, 91];
-Dictionary<string, decimal> prices = new ()
+Dictionary<string, decimal> prices = new()
 {
     ["Widget"] = 19.99m,
     ["Gadget"] = 29.99m
@@ -138,7 +138,7 @@ that wouldn't be available on object alone:
 
 
 
-static T Max<T>(T a, T b) where T: IComparable<T> =>
+static T Max<T>(T a, T b) where T : IComparable<T> =>
     a.CompareTo(b) >= 0 ? a : b;
 
 Console.WriteLine(Max(3, 7));
@@ -208,7 +208,7 @@ public class GenericList<T>
 
     public void AddHead(T data)
     {
-        var node = new Node(data) {Next = head};
+        var node = new Node(data) { Next = head };
         head = node;
     }
 

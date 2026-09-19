@@ -36,7 +36,7 @@ assigning a reference type instance to a variable of an interface the type imple
 and assigning any reference type to an object variable.
 */
 
-Mammal otter = new () { Name = "River otter"};
+Mammal otter = new() { Name = "River otter" };
 Animal animal = otter; // Derived to base class: always safe.
 INamed named = otter;  // Reference type to implemented interface: always safe.
 object obj = otter;   // Any reference type to object: always safe.
@@ -60,7 +60,7 @@ Animal unknownAnimal = new Reptile();
 Console.WriteLine($"Can treat as mammal: {unknownAnimal is Mammal}");
 
 //If you need a nullable result instead of a conditional branch, use as:
-object boxedMammal = new Mammal { Name = "Sea lion"};
+object boxedMammal = new Mammal { Name = "Sea lion" };
 Mammal? maybeMammal = boxedMammal as Mammal;
 Console.WriteLine(maybeMammal is null ? "Not a mammal" : maybeMammal.Name);
 
@@ -76,7 +76,7 @@ Unboxing extracts the value type from that object reference.
 
 int temperature = 72;
 object boxedTemperature = temperature; // Boxing
-int unboxedTemperature = (int) boxedTemperature; //unboxing
+int unboxedTemperature = (int)boxedTemperature; //unboxing
 
 // Packet packet = new(7);
 // ILabelled labelledPacket = packet; 
@@ -122,7 +122,7 @@ public class Reptile : Animal
 
 public interface ILabelled
 {
-    string Label { get; set;}
+    string Label { get; set; }
 }
 
 public struct Packet : ILabelled

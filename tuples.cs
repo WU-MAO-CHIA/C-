@@ -12,12 +12,12 @@ namespace MySpace
 
         static void DoTuples()
         {
-            var pt = (X: 1, Y: 2);  
+            var pt = (X: 1, Y: 2);
             var slope = (double)pt.Y / (double)pt.X;
             Console.WriteLine($"A line from the origin to the point {pt} has a slope of {slope}.");
             pt.X += 5;
             Console.WriteLine($"The point is now at {pt}.");
-            var pt2 = pt with {Y = 10};
+            var pt2 = pt with { Y = 10 };
             Console.WriteLine($"The point 'pt2' is at {pt2}.");
             Console.WriteLine();
 
@@ -30,10 +30,10 @@ namespace MySpace
 
 
             Point pt3 = new Point(1, 1);
-            var pt4 = pt3 with {Y = 10};
+            var pt4 = pt3 with { Y = 10 };
             Console.WriteLine($"The two points are {pt3} and {pt4}");
 
-            double slopeResult  = pt4.Slope();
+            double slopeResult = pt4.Slope();
             Console.WriteLine($"The slope of {pt4} is {slopeResult}");
         }
 
@@ -53,7 +53,7 @@ namespace MySpace
             while (counter < 10)
             {
                 Console.WriteLine($"Hello World! The counter is {counter}");
-                counter++;                
+                counter++;
             }
 
             for (char column = 'a'; column < 'k'; column++)

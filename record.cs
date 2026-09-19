@@ -42,10 +42,10 @@ record關鍵字是你對 a class 或 structa 施加的修飾符。 它告訴編�
 */
 
 Person p1 = new Person("Grace", "Hopper");
-var p2  = p1;
+var p2 = p1;
 Console.WriteLine(ReferenceEquals(p1, p2));
 
-var z1 = new Product { Name = "apple", Price = 10.22M};
+var z1 = new Product { Name = "apple", Price = 10.22M };
 var z2 = z1;
 Console.WriteLine(ReferenceEquals(z1, z2));
 z2.Price = 99.00M;
@@ -75,7 +75,7 @@ Console.WriteLine();
 
 // use with to duplicate
 var original = new Person("Grace", "Hopper");
-var modified = original with { FirstName = "Margaret"};
+var modified = original with { FirstName = "Margaret" };
 
 Console.WriteLine(original); // Person { FirstName = Grace, LastName = Hopper }
 Console.WriteLine(modified); // Person { FirstName = Margaret, LastName = Hopper }
@@ -96,7 +96,7 @@ public record class Product
     public decimal Price { get; set; }
 }
 
-public record struct Coordinate (double Latitude, double Longitude);
+public record struct Coordinate(double Latitude, double Longitude);
 public readonly record struct Temperature(double Celsius)
 {
     public double Fahrenheit => Celsius * 9.0 / 5.0 + 32.0;

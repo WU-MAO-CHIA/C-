@@ -24,7 +24,7 @@ var c1 = new Circle(2);
 Console.WriteLine($"Area: {c1.Area}");
 c1.Draw();
 
-var i1 = new InternalConfiguration {Setting = "setting"};
+var i1 = new InternalConfiguration { Setting = "setting" };
 Console.WriteLine($"i1.Setting: {i1.Setting}");
 //Configure 是明確實作 → 類別表面上看不到，要透過介類型變數才能實作
 var i2 = new ServiceImplementation();
@@ -40,7 +40,7 @@ public class Car : IEquatable<Car>
 {
     public string? Make { get; set; }
     public string? Model { get; set; }
-    public string? Year {get; set; }
+    public string? Year { get; set; }
 
     public bool Equals(Car? car) =>
          car is not null && (Make, Model, Year) == (car.Make, car.Model, car.Year);
@@ -65,7 +65,7 @@ public class FileLogger : ILogger
     public string Name => "File";
     public void Log(string message)
     {
-         Console.WriteLine($"[{Name}] Writing to file: {message}");
+        Console.WriteLine($"[{Name}] Writing to file: {message}");
     }
 }
 

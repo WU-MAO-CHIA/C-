@@ -16,7 +16,7 @@ For a comparison of when to use each, see Choose which kind of type.
 
 using System.Drawing;
 
-var location = (Latitude: 234.23424, Longtiude:-123123.12312);
+var location = (Latitude: 234.23424, Longtiude: -123123.12312);
 Console.WriteLine($"Location: {location.Latitude}, {location.Longtiude}");
 
 //Declare and initialize tuples
@@ -55,7 +55,7 @@ static (double Minimum, double Maximum, double Average) ComputeStats(List<double
     var min = values.Min();
     var max = values.Max();
     var avg = values.Average();
-    return  (min, max, avg);
+    return (min, max, avg);
 }
 
 /*
@@ -111,7 +111,7 @@ The with expression works the same way on tuples as it does on records.
 */
 
 var original1 = (Name: "Widget", Price: 20.33m, InStock: true);
-var discounted = original1 with { Price = 2.33m};
+var discounted = original1 with { Price = 2.33m };
 Console.WriteLine($"Original: {original1.Name} at {original1.Price:C}");
 Console.WriteLine($"Discounted: {discounted.Name} at {discounted.Price:C}");
 
@@ -130,7 +130,7 @@ var sizeChart = new Dictionary<string, (int Min, int Max)>
 
 if (sizeChart.TryGetValue("Medium", out var range))
 {
-     Console.WriteLine($"Medium: {range.Min}–{range.Max}");
+    Console.WriteLine($"Medium: {range.Min}–{range.Max}");
 }
 
 /*

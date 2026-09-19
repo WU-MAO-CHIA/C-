@@ -21,13 +21,13 @@ Console.WriteLine($"point1: ({point1.X}, {point1.Y})");
 Console.WriteLine($"point1: ({point2.X}, {point2.Y})");
 // point1 and point2 are independent copies
 
-point2 = point2 with {Y = 6};
+point2 = point2 with { Y = 6 };
 // point2.Y = 6; 因為是 readonly 所以不能這樣改值
 Console.WriteLine($"point1: ({point1.X}, {point1.Y})");
 Console.WriteLine($"point1: ({point2.X}, {point2.Y})");
 
 // Reference type: both variables refer to the same object
-var list1 = new List<int> {1, 2, 3};
+var list1 = new List<int> { 1, 2, 3 };
 var list2 = list1;
 list2.Add(5);
 Console.WriteLine($"list1 count: {list1.Count}");

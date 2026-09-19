@@ -8,8 +8,8 @@
 不需要從基底型別繼承（結構體不能繼承其他結構體或類別，但可以實作介面）。
 */
 
-var p1 = new Point{ X = 3, Y = 4};
-var p2 = p1 with {X = 10};
+var p1 = new Point { X = 3, Y = 4 };
+var p2 = p1 with { X = 10 };
 Console.WriteLine(p1); // (3, 4)  — p1 is unchanged
 Console.WriteLine(p2); // (10, 4) — only p2 was modified
 Console.WriteLine(p1.ToString());
@@ -51,9 +51,9 @@ struct Point
 
 struct ConnectionSettings
 {
-    public string Host { get; set;}
-    public int Port { get; set;}
-    public int MaxRetries {get; set;}
+    public string Host { get; set; }
+    public int Port { get; set; }
+    public int MaxRetries { get; set; }
 
     public ConnectionSettings()
     {
@@ -101,8 +101,8 @@ struct Velocity
         readonly get;
         set;
     }
-    
-    public readonly double Speed => Math.Sqrt (X * X + Y * Y);
+
+    public readonly double Speed => Math.Sqrt(X * X + Y * Y);
     public readonly override string ToString() => $"({X}, {Y}) speed={Speed:F2}";
 }
 

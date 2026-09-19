@@ -11,7 +11,7 @@ var c3 = new Container(2);
 c3.Print();
 
 
-var person = new Person {FirstName = "Grace", LastName = "aaa"};
+var person = new Person { FirstName = "Grace", LastName = "aaa" };
 // var person1 = new Person { LastName = "aaa"};
 
 Console.WriteLine($"{person.FirstName} {person.LastName}");
@@ -70,5 +70,5 @@ class ConnectionOptions
 {
     public string Host { get; init; } = "localhost";
     public int Port { get; init; } = 80;
-    public bool UseSsl {get; init;} = true;
+    public bool UseSsl { get; init; } = true;
 }

@@ -33,7 +33,7 @@ class CustomerService
 {
     public CustomerList GetTopCustomers()
     {
-        CustomerList customers = [new() {Name  = "Alice"}, new() {Name = "Bob"}];
+        CustomerList customers = [new() { Name = "Alice" }, new() { Name = "Bob" }];
         return customers;
     }
 }

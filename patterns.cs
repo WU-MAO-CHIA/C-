@@ -4,7 +4,7 @@ namespace MySpace
 {
     class Program
     {
-        static readonly string  bankRecords = """
+        static readonly string bankRecords = """
             DEPOSIT,   10000, Initial balance
             DEPOSIT,     500, regular deposit
             WITHDRAWAL, 1000, rent
@@ -26,7 +26,7 @@ namespace MySpace
             WITHDRAWAL,  350, shopping
             DEPOSIT,    2500, project milestone payment
             WITHDRAWAL,  400, entertainment
-            """; 
+            """;
 
         public enum TransactionType
         {
@@ -73,19 +73,20 @@ namespace MySpace
                 string? transactionType = parts[0]?.Trim();
                 if (double.TryParse(parts[1].Trim(), out double amount))
                 {
-                    if (transactionType?.ToUpper() is "DEPOSIT") 
+                    if (transactionType?.ToUpper() is "DEPOSIT")
                     {
                         yield return new Deposit(amount, parts[2]);
-                    } else if (transactionType?.ToUpper() is "WITHDRAWAL")
+                    }
+                    else if (transactionType?.ToUpper() is "WITHDRAWAL")
                     {
                         yield return new Withdrawal(amount, parts[2]);
-                    } 
+                    }
                 }
             }
         }
 
         static void DoString()
-        {        
+        {
             double currentBalance = 0.0;
             var reader = new StringReader(bankRecords);
 
@@ -94,7 +95,7 @@ namespace MySpace
             {
                 if (string.IsNullOrWhiteSpace(line)) continue;
                 string[] parts = line.Split(',');
-            
+
                 string? transactionType = parts[0]?.Trim();
                 if (double.TryParse(parts[1].Trim(), out double amount))
                 {
@@ -146,7 +147,7 @@ namespace MySpace
                 Console.WriteLine($" {transaction} => New Balance: {currentBalance}");
             }
         }
-        
+
         static void Main(string[] args)
         {
             // DoString();

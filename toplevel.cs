@@ -10,8 +10,8 @@ await Task.Delay(500);
 Console.WriteLine("World!");
 
 string? s = Console.ReadLine();
-int returnValue = int.TryParse(s, out int v) ? v: -1;
-return  returnValue;
+int returnValue = int.TryParse(s, out int v) ? v : -1;
+return returnValue;
 
 StringBuilder builder = new();
 builder.AppendLine("The following arguments are passed");
