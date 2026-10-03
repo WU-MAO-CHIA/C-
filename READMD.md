@@ -1,1 +1,1 @@
-https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/null-safety/
+https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/null-safety/null-operators
